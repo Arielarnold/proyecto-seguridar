@@ -1,0 +1,312 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    text-align: center;
+    font-style:normal;
+    font-size:x-large;
+    background-color:#051D43
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+h1{
+    color: #051D43;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid #051D43;
+}
+
+h1 p{
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    color: #051D43;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid #051D43;
+}
+
+h3{
+    color: #051D43;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+h6{
+    color: #051D43;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    color: #051D43;
+    padding-bottom: 50px;
+    margin: 10px;
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#logo{
+    width: 400px;
+}
+
+img{
+    width: 25%;
+    height: 25%;
+    align-content: center;
+}
+.domo img{
+    width: 100%;
+    height: 50%;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ar img{
+    width: 40%;
+    height: 40%;
+    padding: 30px;
+    margin-left: 400px;
+    }
+
+footer{
+    background-color: #051D43;
+}
+
+footer h6{
+    color:aliceblue;
+    padding: 10px;
+    margin: 3px;
+}
+
+.vibralogo{
+width: 480px;
+}
+
+.garnetlogo{
+    width: 370px;
+}
+
+.intelbraslogo{
+    width: 500px;
+}
+
+
+/*grid simple*/
+
+#confian{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px;
+    justify-content: center;
+    border: 2px solid #051D43;
+    padding-top: 20px;
+}
+
+.adidaslogo img{
+    width: 200px;
+    height: 200px;
+}
+.samsunglogo img{
+    width: 200px;
+    height: 200px;
+}
+.umaralogo img{
+    width: 200px;
+    height: 200px;
+}
+.danonelogo img{
+    width: 200px;
+    height: 200px;
+}
+.energelogo img{
+    width: 200px;
+    height: 200px;
+}
+.munilogo img{
+    width: 200px;
+    height: 200px;
+}
+.santanlogo img{
+    width: 200px;
+    height: 200px;
+}
+.movilstorelogo img{
+    width: 200px;
+    height: 200px;
+}
+.dominologo img{
+    width: 200px;
+    height: 200px;
+}
+
+.redes{
+    display: flex;
+    width: 700px;
+    padding-left: 590px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    font-size: x-large;
+    color: #051D43;
+}
+
+form{
+    width: 100%;
+    align-items: center;
+    color: #051D43;
+    padding-left: 500px;
+
+}
+
+.iframe{
+    width: 100%;
+    align-content: center;
+    padding-left: 350px;
+    margin: 30px;
+}
+
+.galeriafotos {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
+padding: 20px;
+gap: 20px;
+}
+.fotos {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #051D43;
+    border-radius: 1px;
+    overflow:hidden;
+}
+.fotos img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+
+.confian {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 20px;
+}
+.logoss {
+    width: 100%;
+    height: 100px;
+}
+.logoss img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+
+.quienes{
+    width: 100%;
+    height: 100%;
+    padding-left: 550px;
+    object-fit:contain;
+}
+
+
+#marcas{
+    width: 1500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+
+
+@media (min-width:480px){
+
+.nav-list{
+flex-direction: row;
+}
+main{
+background-color: white;
+}
+.galeriafotos{
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+
+@media (min-width:768px) {
+
+.nav{
+flex-direction: row;
+}
+.galeriafotos{
+grid-template-columns: (4,1fr);
+}
+}
+
+
+/*grid area*/
+
+/*#grid-area{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+    "area1 area2 area2"
+    "area1 area3 area4"
+    "area1 area3 area4"
+    ;
+}   
+
+#area1{
+    grid-area: area1;
+    background-color: blueviolet;
+}
+#area2{
+    grid-area: area2;
+    background-color: green;
+}
+#area3{
+    grid-area: area3;
+    background-color: red;
+}
+#area4{
+    grid-area: area4;
+    background-color: yellow;
+}

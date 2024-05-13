@@ -104,6 +104,10 @@ font-size: 2rem;
 color: #4ebbfa;
 }
 
+h5{
+font-size: smaller;
+}
+
 h6{
 color: #051D43;
 padding: 5px;

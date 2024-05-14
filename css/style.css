@@ -131,7 +131,7 @@ h1 {
   color: #051D43;
 }
 
-h1 p {
+h1p {
   color: #051D43;
   padding: 40px;
   margin: 40px;
@@ -202,7 +202,7 @@ img {
   height: 800px;
   object-fit: cover;
 }
-
+.carousel-inner img,
 .carousel-item img {
   width: 100%;
   height: 100%;
@@ -216,7 +216,6 @@ img {
   justify-content: center;
   display: flex;
 }
-
 .ar img {
   width: 50%;
   padding: 20px;
@@ -266,14 +265,12 @@ img {
   align-items: center;
   gap: 20px;
 }
-
-.quienessomos img {
+.quienessomosimg {
   width: 50%;
   height: 250px;
   object-fit: cover;
 }
-
-.quienessomos p {
+.quienessomosimg p {
   width: 50%;
   text-align: justify;
   color: #051D43;
@@ -290,8 +287,7 @@ img {
   height: 250px;
   object-fit: cover;
 }
-
-.mision p {
+.mision imgp {
   width: 50%;
   text-align: justify;
   color: #051D43;
@@ -336,8 +332,7 @@ img {
   align-items: center;
   gap: 30px;
 }
-
-.logoss img {
+.logossimg {
   width: 50%;
   height: fit-content;
   display: flex;
@@ -355,14 +350,14 @@ img {
     padding-left: 0%;
     justify-content: center;
   }
-  .quienessomos img {
+  .quienessomosimg {
     width: 100%;
     height: 100%;
     padding-left: 0%;
     justify-content: center;
     align-items: center;
   }
-  .quienessomos p {
+  .quienessomosimg p {
     width: 100%;
     margin: 0%;
     text-align: center;
@@ -374,13 +369,13 @@ img {
     padding-left: 100px;
     justify-content: center;
   }
-  .mision img {
+  .misionimg {
     width: 100%;
     height: 200px;
     justify-content: center;
     align-items: center;
   }
-  .mision p {
+  .misionimg p {
     width: 100%;
     margin: 0%;
     text-align: center;
@@ -410,15 +405,13 @@ img {
   align-items: center;
   gap: 20px;
 }
-
-.cctv img {
+.cctvimg {
   width: 50%;
   height: 250px;
   object-fit: cover;
   padding-left: 20px;
 }
-
-.cctv p {
+.cctvimg p {
   width: 50%;
   text-align: justify;
   color: #051D43;
@@ -429,14 +422,12 @@ img {
   align-items: center;
   gap: 20px;
 }
-
-.alarmas img {
+.alarmasimg {
   width: 46%;
   height: 250px;
   object-fit: cover;
 }
-
-.alarmas p {
+.alarmasimg p {
   width: 50%;
   text-align: justify;
   color: #051D43;
@@ -448,15 +439,13 @@ img {
   gap: 20px;
   margin-bottom: 70px;
 }
-
-.cercos img {
+.cercosimg {
   width: 50%;
   height: 250px;
   object-fit: cover;
   padding-left: 20px;
 }
-
-.cercos p {
+.cercosimg p {
   width: 50%;
   text-align: justify;
   color: #051D43;
@@ -470,56 +459,58 @@ img {
     padding-left: 0%;
     justify-content: center;
   }
-  .cctv img {
+  .cctvimg {
     width: 100%;
     height: 100%;
     padding-left: 0%;
     justify-content: center;
     align-items: center;
   }
-  .cctv p {
+  .cctvimg p {
     width: 100%;
     margin: 0%;
     text-align: center;
-  }
-  .alarmas {
-    display: inline;
-    width: 100%;
-    height: auto;
-    padding-left: 100px;
-    justify-content: center;
-  }
-  .alarmas img {
-    width: 100%;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-  }
-  .alarmas p {
-    width: 100%;
-    margin: 0%;
-    text-align: center;
-  }
-  .cercos {
-    display: inline;
-    width: 100%;
-    height: auto;
-    padding-left: 0%;
-    justify-content: center;
-  }
-  .cercos img {
-    width: 100%;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-  }
-  .cercos p {
-    width: 100%;
-    margin: 0%;
-    text-align: center;
-    padding-bottom: 50px;
   }
 }
+.alarmas {
+  display: inline;
+  width: 100%;
+  height: auto;
+  padding-left: 100px;
+  justify-content: center;
+}
+.alarmasimg {
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.alarmasimg p {
+  width: 100%;
+  margin: 0%;
+  text-align: center;
+}
+
+.cercos {
+  display: inline;
+  width: 100%;
+  height: auto;
+  padding-left: 0%;
+  justify-content: center;
+}
+.cercosimg {
+  width: 100%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.cercosimg p {
+  width: 100%;
+  margin: 0%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 .realizadoss {
   color: #051D43;
 }
@@ -539,15 +530,13 @@ img {
   border-radius: 1px;
   overflow: hidden;
 }
-
-.fotos img {
+.fotosimg {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
-
-.fotos img:hover {
+.fotosimg:hover {
   transform: scale(1.1);
 }
 
@@ -572,8 +561,7 @@ img {
   color: #051D43;
   transition: transform 0.5s ease-in-out;
 }
-
-.redes i:hover {
+.redesi:hover {
   color: #4ebbfa;
   font-size: 150%;
 }

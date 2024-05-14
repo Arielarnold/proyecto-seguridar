@@ -2,65 +2,68 @@ header{
     text-align: center;
     font-style:normal;
     font-size:large;
-    background-color:#051D43;
+    background-color:$main-color;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     
     h1{
-    color: #051D43;
+    color: $main-color;
     width: 100%;
     padding: 40px;
     margin-bottom: 40px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 3px solid #051D43;
+    border: 3px solid $main-color;
     }
     
     .bienvenida{
-    color: #051D43;
+    color: $main-color;
     font-size: smaller;
     justify-content: center;
     }
     
     .atencion{
-    color: #051D43;
+    color: $main-color;
     }
     
     .tranqui{
-    color: #051D43;
+    color: $main-color;
     }
     
-    h1 p{
-    color: #051D43;
+    h1{
+    
+    &p{
+    color: $main-color;
     padding: 40px;
     margin: 40px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style:oblique;
     }
-    
+    }
+
     h2{
-    color: #051D43;
+    color: $main-color;
     padding: 40px;
     margin: 20px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 1px solid #051D43;
-    box-shadow: 1px 1px 1px 1px #4ebbfa;
+    border: 1px solid $main-color;
+    box-shadow: 1px 1px 1px 1px $celeste-color;
     }
     
     h3{
-    color: #051D43;
+    color: $main-color;
     padding: 40px;
     margin: 0;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-shadow: 1px 1px 1px 1px #4ebbfa;
+    box-shadow: 1px 1px 1px 1px $celeste-color;
     }
     
     h3::first-letter{
     font-size: 2rem;
-    color: #4ebbfa;
+    color: $celeste-color;
     }
     
     h5{
@@ -68,7 +71,7 @@ header{
     }
     
     h6{
-    color: #051D43;
+    color: $main-color;
     padding: 5px;
     margin: 0px;
     text-align: center;
@@ -76,7 +79,7 @@ header{
     }
     
     p{
-    color: #051D43;
+    color: $main-color;
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -100,12 +103,12 @@ header{
     width: 100%;
     height: 800px;
     object-fit: cover;
-    }
     
-    .carousel-item img{
+    & img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    }
     }
     
     .ar{
@@ -114,14 +117,14 @@ header{
     padding: 20px;
     justify-content: center;
     display: flex;
-    }
-    
-    .ar img {
+
+    & img{
     width: 50%;
     padding: 20px;
-    box-shadow: 1px 1px 1px 1px #4ebbfa;
+    box-shadow: 1px 1px 1px 1px $celeste-color;
     justify-content: center;
     }
+}
     
     @media only screen and (max-width:480px){
     #logo{
@@ -129,7 +132,7 @@ header{
     }
     
     main{
-    background-color:#f0f8ff;
+    background-color:$light-color;
     }
     
     .bienvenida{
@@ -144,9 +147,8 @@ header{
     object-fit: cover;
     box-shadow: none;
     justify-content: center;
-    }
     
-    .ar img{
+    & img{
     width: 100%;
     height: 50%;
     padding: 0%;
@@ -154,7 +156,8 @@ header{
     box-shadow:none;
     justify-content: center;
     }
-    
+    }
+
     .carousel-item.active{
     width: 120%;
     height: 100%;

@@ -1,7 +1,7 @@
-.contacto-fondo{
+    .contacto-fondo{
     background-color: none;
     padding: 0%;
-    color: #051D43;
+    color: $main-color;
     }
     
     .redes{
@@ -11,20 +11,20 @@
     margin-bottom: 40px;
     justify-content:space-evenly;
     font-size: xx-large;
-    color: #051D43;
+    color: $main-color;
     transition: transform 0.5s ease-in-out;
-    }
-    
-    .redes i:hover{
-    color:#4ebbfa;
+
+    &i:hover{
+    color:$celeste-color;
     font-size: 150%;
+    }
     }
     
     .iframe{
     width: 100%;
     padding-left: 440px;
     margin-bottom: 70px;
-    box-shadow: 2px 2px 2px 2px #4ebbfa;
+    box-shadow: 2px 2px 2px 2px $celeste-color;
     }
     
     @media only screen and (max-width:480px){
